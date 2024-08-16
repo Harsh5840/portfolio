@@ -164,11 +164,11 @@ const Resume = () => {
     >
       <div className="container mx-auto">
         <Tabs
-          defaultValue="Skills"
+          defaultValue="About"
           className="flex flex-col xl:flez-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="About me">About me</TabsTrigger>
+            <TabsTrigger value="About">About me</TabsTrigger>
             <TabsTrigger value="Experience">Experience</TabsTrigger>
             <TabsTrigger value="Education">Education</TabsTrigger>
             <TabsTrigger value="Skills">Skills</TabsTrigger>
