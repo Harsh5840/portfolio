@@ -20,13 +20,11 @@ export default function Home() {
               proficient in various programming languages and technologies.
             </p>
             <div className="flex flex-col xl:flex-row gap-8 items-center">
-              <Button
-                variant={"outline"}
-                size="lg"
-                className="uppercase flex items-center gap-2 p-4"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
+              <Button asChild variant={"outline"} size="lg" className="uppercase flex items-center gap-2 p-4">
+                <a href="https://drive.google.com/file/d/1SNyRhPySd7u3YM-yNWdGe5OuqfoJAXOZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </a>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social

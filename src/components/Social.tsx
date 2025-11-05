@@ -13,11 +13,19 @@ const Social = ({containerStyles , iconStyles}: any) => {
   return (
     <div className={containerStyles}>
         {socials.map((item, index) => {
-            return( <Link href={item.path} key={index} className={iconStyles}>
-            {item.icon}
-            </Link>
-            );
-        })}
+                    return (
+                      <Link
+                        href={item.path}
+                        key={index}
+                        className={iconStyles}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${item.path}`}
+                      >
+                        {item.icon}
+                      </Link>
+          );
+    })}
     </div>
   )
 }
