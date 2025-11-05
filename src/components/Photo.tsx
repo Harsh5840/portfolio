@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="w-ful h-full relative">
+    <div className="w-full h-full relative">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -23,7 +23,7 @@ const Photo = () => {
             duration: 0.4,
             ease: "easeInOut",
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten "
+          className="w-[240px] h-[240px] xl:w-[420px] xl:h-[420px] mix-blend-lighten "
         >
           <Image
             src="/images/profile2.jpeg"

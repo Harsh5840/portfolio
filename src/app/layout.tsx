@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${jetbrainsMono.className} min-h-screen flex flex-col`}>
         <Header />
         <StairTransition />
-        <main className="flex-1">
+        <main className="flex-1 min-h-0">
           <PageTransition>
             {children}
           </PageTransition>
