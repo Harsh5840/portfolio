@@ -19,14 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.className}>
+      <body className={`${jetbrainsMono.className} min-h-screen flex flex-col`}>
         <Header />
         <StairTransition />
-        <PageTransition >
-          {children}
-        </PageTransition>
-      
-        </body>
+        <main className="flex-1">
+          <PageTransition>
+            {children}
+          </PageTransition>
+        </main>
+      </body>
     </html>
   );
 }
