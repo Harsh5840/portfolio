@@ -27,7 +27,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ years",
+      fieldValue: "1 Year",
     },
     {
       fieldName: "Nationality",
@@ -66,7 +66,7 @@ const education = {
   icon: "/assets/resume/badge.svg",
   title: "My education",
   description:
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Bachelor of Engineering in Computer Science & Business Systems from Thapar Institute of Engineering & Technology (CGPA: 8.2/10.0, Expected 2027). Completed Fullstack + DevOps Bootcamp (100xDevs) and LangChain course (DeepLearning.AI). Scored 92.8% in Class 12th and 95% in Class 10th (CBSE).",
   items: [
     {
       institution: "Thapar University",
@@ -89,7 +89,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Proficient in modern web technologies including JavaScript, TypeScript, Python, and C++. Experienced with React.js, Next.js, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and various AI/ML tools (HuggingFace, LangChain, OpenAI APIs). Skilled in DevOps practices with Git, Docker, GitHub Actions, AWS EC2/S3, and secure authentication systems.",
   skillList: [
     {
       icon: <FaHtml5 />,
