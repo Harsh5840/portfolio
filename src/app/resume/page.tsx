@@ -52,27 +52,12 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "I have worked with various technologies and frameworks to build scalable and performant web applications. I have experience in building both frontend and backend applications, and I am proficient in using various technologies such as React, Node.js, and TypeScript. I am also familiar with popular frameworks like Next.js and Tailwind CSS.",
+    "Full-Stack Developer experienced in building scalable web platforms using Next.js, React, Node.js and modern cloud tooling. Recent work includes architecting an event booking platform with secure payments, authentication and role-based access control, and redesigning UI to improve engagement and retention.",
   items: [
     {
-      company: "xyz",
-      position: "Software Engineer",
-      duration: "2023",
-    },
-    {
-      company: "Web DesignX",
-      position: "Figma Designer",
-      duration: "2022-23",
-    },
-    {
-      company: "E-Commerce",
-      position: "Software Engineer",
-      duration: "2021-22",
-    },
-    {
-      company: "Tech Startup",
-      position: "Software Engineer",
-      duration: "2021-22",
+      company: "Talkeys (Startup)",
+      position: "Full-Stack Developer",
+      duration: "Jan 2025 – Present",
     },
   ],
 };
@@ -165,7 +150,7 @@ const Resume = () => {
       <div className="container mx-auto">
         <Tabs
           defaultValue="About"
-          className="flex flex-col xl:flez-row gap-[60px]"
+          className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="About">About me</TabsTrigger>
@@ -174,7 +159,7 @@ const Resume = () => {
             <TabsTrigger value="Skills">Skills</TabsTrigger>
           </TabsList>
 
-          <div className="min-h-[70vh] w-full">
+          <div className="min-h-[70vh] w-full flex items-start xl:pl-12">
             <TabsContent value="Experience" className="w-full ">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
@@ -237,14 +222,15 @@ const Resume = () => {
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
+                <ScrollArea className="max-h-[420px]">
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 xl:gap-[30px] gap-4">
                   {skills.skillList.map((skill, index) => {
                     return (
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                            <TooltipTrigger className="w-full h-[120px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <div className="text-5xl md:text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
                             </TooltipTrigger>
                             <TooltipContent>
                               <p className="capitalize">{skill.name}</p>
@@ -255,6 +241,7 @@ const Resume = () => {
                     )
                   })}
                 </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
             <TabsContent value="About" className="w-full text-center xl:text-left">
