@@ -24,19 +24,20 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    title: "LedgerX — AI-Powered Financial Transaction System",
+    title: "LedgerX",
     category: "Full stack",
     description:
-      "Cryptographically secure double-entry ledger with ML-powered transaction classification. Implemented CI/CD and cloud deployment for high availability.",
+      "LedgerX is an AI-powered, bank-grade ledger and transaction platform offering double-entry accounting, real-time WebSocket dashboards, and immutable audit trails. It features a hybrid ML fraud-detection pipeline (rule engine + LangChain/Gemini), compliance-ready reversal workflows, and is built with Next.js/TypeScript frontend and Node/Express/Prisma/Postgres backend, deployed on AWS/Render.",
     stack: [
       { name: "Next.js" },
+      { name: "TypeScript" },
       { name: "Node.js" },
+      { name: "Express" },
       { name: "PostgreSQL" },
       { name: "Prisma" },
-      { name: "HuggingFace" },
       { name: "LangChain" },
-      { name: "Docker" },
-      { name: "AWS EC2" },
+      { name: "Gemini" },
+      { name: "AWS/Render" },
     ],
     image: "/assets/work/thumb1.png",
     live: "",
@@ -44,7 +45,7 @@ const projects = [
   },
   {
     num: "02",
-    title: "AI-Powered Agile Management Platform",
+    title: "AI Agile Master",
     category: "Full stack",
     description:
       "Enterprise-grade project management platform with vector semantic search, Redis caching and AI-assisted workflows to speed up sprint cycles.",
@@ -63,6 +64,44 @@ const projects = [
   },
   {
     num: "03",
+    title: "CityScape",
+    category: "Full stack",
+    description:
+      "Full-stack urban analytics platform leveraging Vertex AI, Gemini Vision, and Google Maps API to deliver real-time city insights through event classification, social media aggregation, and location-based intelligence. Built with Next.js, FastAPI, Firebase, and Docker, supporting 10,000+ concurrent users with sub-200ms response times.",
+    stack: [
+      { name: "Next.js" },
+      { name: "FastAPI" },
+      { name: "Vertex AI" },
+      { name: "Gemini Vision" },
+      { name: "Google Maps API" },
+      { name: "Firebase" },
+      { name: "Docker" },
+    ],
+    image: "/assets/work/thumb3.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "04",
+    title: "BotSwarm",
+    category: "Full stack",
+    description:
+      "BotSwarm — a real-time, multi-AI chat platform with customizable rooms where users can collaborate with domain-specific assistants (DevGPT, FitGPT, DocGPT, etc.). Next.js frontend, Express + Prisma API, and a WebSocket service power the real-time experience; file uploads (Cloudinary) and Markdown/syntax-highlighted messages are supported. AI responses are generated via a GROQ/LLM backend; the stack is designed for deployment on Render with clear env/secret separation and extensibility for document analysis and vector retrieval.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Express" },
+      { name: "Prisma" },
+      { name: "WebSocket" },
+      { name: "Cloudinary" },
+      { name: "GROQ/LLM" },
+      { name: "Render" },
+    ],
+    image: "/assets/work/thumb1.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
     title: "ScholarAI — Autonomous Research Agent",
     category: "Tooling",
     description:
@@ -74,7 +113,7 @@ const projects = [
       { name: "FAISS" },
       { name: "OpenAI" },
     ],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/thumb2.png",
     live: "",
     github: "",
   },
